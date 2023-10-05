@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "name": "Shivam",
+            "experience": "5.5 yrs",
+            "ctc": {
+                "current": "3.5 Lac",
+                "expected": "5 Lac"
+            },
+            "company": "Naukri.com",
+            "location": {
+                "current": "Mumbai",
+                "preferred": ["Noida", "Gurgaon"]
+            },
+            "education": "K.V.S",
+            "skills": {
+                "primary": [
+                    "Java",
+                    "Spring",
+                    "Python"
+                ],
+                "secondary": [
+                    "Nodejs",
+                    "Helm"
+                ]
+            }
+        }
+    ]
+}
