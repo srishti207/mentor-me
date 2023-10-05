@@ -1,10 +1,11 @@
 import React,{ useState, useEffect } from "react";
 // import { Container } from "react-bootstrap";
 import UserCard from "../Card/UserCard";
+import data from "../../data/sample.json";
 
 function Home(){
 
-    const [users, setUsers] = useState([]);
+    const [users, setUsers] = useState(data.data);
     useEffect(() => {
         fetch('http://localhost:9091/getMentors')
             .then((response) => response.json())
@@ -14,13 +15,13 @@ function Home(){
 
 
     return(
-        <div className="user-list">
+        <ul className="user-card-list">
             {users.map((user, index) => (
-                <div key={index} className="user-card-wrapper">
-                <UserCard key={index} user={user} />
-                </div>
+                <li key={index} className="user-card-list__item">
+                    <UserCard key={index} user={user} />
+                </li>
             ))}
-        </div>
+        </ul>
     );
 }
 

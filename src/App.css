@@ -36,19 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-
-.user-card-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.user-card-wrapper {
-  padding: 10px;
-}

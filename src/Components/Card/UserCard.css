@@ -1,0 +1,57 @@
+.user-card-container {
+    padding: 12px;
+}
+
+.user-card-list {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 0px;
+}
+
+.user__name {
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    color: #484848;
+}
+
+.user-meta {
+    margin-top: 12px;
+    text-align: left;
+}
+
+.user-meta div {
+    display: inline-block;
+}
+
+.user-meta__row:not(:first-child) {
+    margin-left: 12px;
+}
+
+.user-meta__row span {
+    margin-left: 8px;
+}
+
+.user-card-list__item {
+    list-style: none;
+    box-shadow: 0 2px 2px 2px #aaa;
+}
+
+.user-details__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 12px;
+}
+
+.user-details__key {
+    color: #aaa;
+    width: 20%;
+}
+
+.user-details__value {
+    color: #484848;
+    margin-left: 16px;
+    width: 80%;
+}
