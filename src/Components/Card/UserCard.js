@@ -8,15 +8,15 @@ const UserCard = ({ user }) => {
                 <h2 className='user__name'>{user.name}</h2>
                 <div className='user-meta'>
                     <div className='user-meta__row'>
-                        <img height={12} width={12} src="logo192.png" alt="Bag Icon" title="Experience" />
+                        <img height={16} width={16} src="icons/bag.png" alt="Bag Icon" title="Experience" />
                         <span>{user.experience}</span>
                     </div>
                     <div className='user-meta__row'>
-                        <img height={12} width={12} src="logo192.png" alt="Wallet Icon" title="CTC" />
+                        <img height={16} width={16} src="icons/wallet.png" alt="Wallet Icon" title="CTC" />
                         <span>{user.ctc.current}</span>
                     </div>
                     <div className='user-meta__row'>
-                        <img height={12} width={12} src="logo192.png" alt="Pin Icon" title="Location" />
+                        <img height={16} width={16} src="icons/location.png" alt="Pin Icon" title="Location" />
                         <span>{user.location.current}</span>
                     </div>
                 </div>
