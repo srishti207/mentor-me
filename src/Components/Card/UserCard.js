@@ -39,7 +39,7 @@ const UserCard = ({ user }) => {
                     </div>
                     <div className='user-details__row'>
                         <div className='user-details__key'>May i also know</div>
-                        <div className='user-details__value'>{user.skills.secondary}</div>
+                        <div className='user-details__value'>{user.skills.secondary.join(' ')}</div>
                     </div>
                 </div>
             </div>
