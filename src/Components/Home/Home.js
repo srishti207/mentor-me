@@ -5,7 +5,7 @@ import data from "../../data/sample.json";
 
 function Home(){
 
-    const [users, setUsers] = useState(data.data);
+    const [users, setUsers] = useState(data.users);
     useEffect(() => {
         fetch('http://localhost:9091/getMentors')
             .then((response) => response.json())
