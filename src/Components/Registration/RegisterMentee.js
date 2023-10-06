@@ -19,22 +19,23 @@ function RegisterMentee({ onRegistration }) {
 
     return (
         <div className="register-mentee-container"> {/* Apply a CSS class for styling */}
-            <h2>Register as a Mentee</h2>
+            <h2 className="maintext">Register as a Mentee</h2>
             <div className="input-container"> {/* Apply CSS class for input styling */}
                 <label>User ID:</label>
+                <br/>
                 <input
-                    type="text"
+                    type="text" placeholder="User ID"
                     value={userId}
                     onChange={(e) => setUserId(e.target.value)}
                 />
             </div>
             <div className="input-container"> {/* Apply CSS class for input styling */}
-                <label>Preferred Skill:</label>
+                <label className="skill">Preferred Skill:</label>
                 <select
                     value={selectedSkillId}
                     onChange={(e) => setSelectedSkillId(e.target.value)}
                 >
-                    <option value="">Select a skill</option>
+                    <option value="" ><p>Select a skill</p></option>
                     {skills.map((skill) => (
                         <option key={skill.skillId} value={skill.skillId}>
                             {skill.skillLabel}
