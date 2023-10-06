@@ -26,19 +26,24 @@ function Home() {
 
     return (
         <div>
-            <h2>List of Mentors</h2>
-            {isLoading ? ( // Show loading message when isLoading is true
-                <p>Your request is being processed...</p>
-            ) : (
-                <ul className="user-card-list">
-                    {users.map((user, index) => (
-                        <li key={index} className="user-card-list__item">
-                            <UserCard key={index} user={user} />
-                        </li>
-                    ))}
-                </ul>
-            )}
+    {!isLoading && <h2>List of Mentors</h2>}
+    {isLoading ? ( // Show loading message when isLoading is true
+        // <p>Your request is being processed...</p>
+        <div className="loading">
+            <p>Processing your request...</p>
+            <div class="loader"></div>
         </div>
+    ) : (
+        <ul className="user-card-list">
+            {users.map((user, index) => (
+                <li key={index} className="user-card-list__item">
+                    <UserCard key={index} user={user} />
+                </li>
+            ))}
+        </ul>
+    )}
+</div>
+
     );
 }
 
