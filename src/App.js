@@ -10,7 +10,7 @@ import {
 import Engage from "./Components/Engage/Engage";
 import EngageResponse from "./Components/Engage/EngageResponse";
 import RegisterMentee from "./Components/Registration/RegisterMentee";
-import New from "./Components/Registration/New";
+// import New from "./Components/Registration/New";
 
 function App() {
 
@@ -45,7 +45,7 @@ function App() {
               <Route path="/engage" element={<Engage />} />
               <Route path="/preview" element={<Preview />} />
               <Route path="/engageMentor" element={<EngageResponse />} />
-              <Route path="/new" element={<New />} />
+              {/*<Route path="/new" element={<New />} />*/}
           </Routes>
         </div>
       </Router>
