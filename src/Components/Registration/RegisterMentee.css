@@ -1,71 +1,129 @@
-.register-mentee-container {
-    /* Add some padding to the sides of the container */
-    padding: 20px 40px;
-    /* Add a box shadow to make the container stand out */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-.input-container {
-    /* Add a bottom border to separate each input field */
-    border-bottom: 1px solid #ccc;
-}
-
-button {
-    /* Make the button slightly larger */
-    width: 150px;
-    /* Increase the font size of the button text */
-    font-size: 16px;
-}
-
-button:hover {
-    /* Make the button background color slightly darker on hover */
-    background-color: #0069d9;
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
-.input-container input,
-.input-container select {
-    /* Increase the height of the inputs */
-    height: 40px;
-    /* Add some padding to the inputs */
-    padding: 10px;
-    /* Add a border to the inputs */
-    border: 1px solid #ccc;
-    /* Round the corners of the inputs */
-    border-radius: 5px;
-    /* Change the font family of the inputs */
-    font-family: sans-serif;
+body{
+    background-color: rgb(102, 185, 220);
 }
 
-.input-container input:focus,
-.input-container select:focus {
-    /* Add an outline to the inputs when they are focused */
-    outline: 1px solid #007bff;
-}
 
 .register-mentee-container {
-    /* Add a width to the container to ensure it is centered on the webpage */
-    width: 500px;
-    /* Add a margin to the container to center it on the webpage */
-    margin: 0 auto;
+  height: 500px;
+    width: 400px;
+    background-color: #eee;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    cursor: pointer;
 }
 
+.maintext {
+    text-align: center;
+    color: grey;
+    margin-top: 10px;
+    font-size: 160%;
+    
+}
+
+
 .input-container {
-    /* Add a display: flex property to the input container to ensure the inputs are aligned horizontally */
-    display: flex;
-    /* Add an align-items: center property to the input container to ensure the inputs are aligned vertically */
-    align-items: center;
-    /* Add a justify-content: space-between property to the input container to ensure the inputs are evenly spaced */
-    justify-content: space-between;
+    display: block;
+    border: none;
 }
 
 .input-container label {
-    /* Add a width of 100px to the labels to ensure they are aligned */
-    width: 100px;
+    display: block;
+    text-align: left;
+    color: grey;
+    font-size: 130%;
+    font-weight: bolder;
 }
 
-.input-container input,
+.input-container label::placeholder{
+    color: grey;
+}
+
+.input-container input {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    height: 55px;
+    width: 360px;
+    position: absolute;
+    align-items: start;
+    align-self: self-start;
+}
+
+.input-container input::placeholder{
+    color: grey;
+    font-size: 18px;
+}
+
+.input-container input:focus{
+    outline: none !important;
+    /* border:1px solid rgba(8,7,16,0.6); */
+    box-shadow: 0 0 10px rgba(8,7,16,0.6);
+  }
+
+.input-container .skill {
+    display: block;
+    text-align: left;
+    color: grey;
+    font-size: 130%;
+    font-weight: bolder;
+    margin-top: 90px;
+}
+
+
 .input-container select {
-    /* Add a flex: 1 property to the inputs to ensure they take up the remaining space in the input container */
-    flex: 1;
+    background-color: white;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 360px;
+    position: absolute;
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+    
+}
+
+
+
+.input-container select:focus{
+    outline: none !important;
+    /* border:1px solid rgba(8,7,16,0.6); */
+    box-shadow: 0 0 10px rgba(8,7,16,0.6);
+}
+
+
+
+
+.register-mentee-container button {
+    background-color: #0056b3; 
+    color: #fff; 
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 130px;
+    width: 360px;
+    height: 45px;
+}
+
+.register-mentee-container button:hover {
+    background-color: rgb(102, 185, 220); 
 }
