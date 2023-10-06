@@ -1,0 +1,71 @@
+.register-mentee-container {
+    /* Add some padding to the sides of the container */
+    padding: 20px 40px;
+    /* Add a box shadow to make the container stand out */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-container {
+    /* Add a bottom border to separate each input field */
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    /* Make the button slightly larger */
+    width: 150px;
+    /* Increase the font size of the button text */
+    font-size: 16px;
+}
+
+button:hover {
+    /* Make the button background color slightly darker on hover */
+    background-color: #0069d9;
+}
+
+
+.input-container input,
+.input-container select {
+    /* Increase the height of the inputs */
+    height: 40px;
+    /* Add some padding to the inputs */
+    padding: 10px;
+    /* Add a border to the inputs */
+    border: 1px solid #ccc;
+    /* Round the corners of the inputs */
+    border-radius: 5px;
+    /* Change the font family of the inputs */
+    font-family: sans-serif;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+    /* Add an outline to the inputs when they are focused */
+    outline: 1px solid #007bff;
+}
+
+.register-mentee-container {
+    /* Add a width to the container to ensure it is centered on the webpage */
+    width: 500px;
+    /* Add a margin to the container to center it on the webpage */
+    margin: 0 auto;
+}
+
+.input-container {
+    /* Add a display: flex property to the input container to ensure the inputs are aligned horizontally */
+    display: flex;
+    /* Add an align-items: center property to the input container to ensure the inputs are aligned vertically */
+    align-items: center;
+    /* Add a justify-content: space-between property to the input container to ensure the inputs are evenly spaced */
+    justify-content: space-between;
+}
+
+.input-container label {
+    /* Add a width of 100px to the labels to ensure they are aligned */
+    width: 100px;
+}
+
+.input-container input,
+.input-container select {
+    /* Add a flex: 1 property to the inputs to ensure they take up the remaining space in the input container */
+    flex: 1;
+}

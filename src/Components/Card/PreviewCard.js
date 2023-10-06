@@ -1,31 +1,10 @@
-import React, { useState }  from 'react';
-import './UserCard.css'
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import './PreviewCard.css'
 
-
-const UserCard = ({ user }) => {
-
-    const navigate = useNavigate();
-    const [showPopup, setShowPopup] = useState(false);
-
-    const handlePreviewUser = () => {
-        navigate('/preview');
-    };
-
-
-    const handleSelectUser = () => {
-        setShowPopup(true);
-
-        setTimeout(() => {
-            setShowPopup(false);
-            // navigate('/engage');
-        }, 2000);
-    };
-
-
-    return (
-        <div className="user-card-container">
-            <div className="user-card">
+function PreviewCard({ user }){
+    return(
+        <div className="preview-card-container">
+            <div className="preview-card">
                 <h2 className='user__name'>{user.name}</h2>
                 <div className='user-meta'>
                     <div className='user-meta__row'>
@@ -40,22 +19,22 @@ const UserCard = ({ user }) => {
                         <img height={16} width={16} src="icons/location.png" alt="Pin Icon" title="Location" />
                         <span>{user.location}</span>
                     </div>
-                    <div className='user-meta__row'>
-                        <button
-                            type='button'
-                            className='user_card_select'
-                            onClick={handleSelectUser}
-                        >
-                            Show Interest
-                        </button>
-                        <button
-                            type='button'
-                            className='user_card_preview'
-                            onClick={handlePreviewUser}
-                        >
-                            Preview Mentor
-                        </button>
-                    </div>
+                {/*    <div className='user-meta__row'>*/}
+                {/*        <button*/}
+                {/*            type='button'*/}
+                {/*            className='user_card_select'*/}
+                {/*            onClick={handleSelectUser}*/}
+                {/*        >*/}
+                {/*            Select*/}
+                {/*        </button>*/}
+                {/*        <button*/}
+                {/*            type='button'*/}
+                {/*            className='user_card_preview'*/}
+                {/*            onClick={handleSelectUser}*/}
+                {/*        >*/}
+                {/*            Select*/}
+                {/*        </button>*/}
+                {/*    </div>*/}
                 </div>
                 <div className='user-details'>
                     <div className='user-details__row'>
@@ -76,13 +55,10 @@ const UserCard = ({ user }) => {
                     </div>
                 </div>
             </div>
-            {showPopup && (
-                <div className="processing-popup">
-                    <p>We are processing your request</p>
-                </div>
-            )}
         </div>
+
+
     );
 };
 
-export default UserCard;
+export default PreviewCard;

@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import Home from "./Components/Home/Home";
+import Preview from "./Components/Preview/Preview";
 import {
     BrowserRouter as Router,
     Route,
     Routes
 } from "react-router-dom";
+import Engage from "./Components/Engage/Engage";
+import EngageResponse from "./Components/Engage/EngageResponse";
+import RegisterMentee from "./Components/Registration/RegisterMentee";
+import New from "./Components/Registration/New";
 
 function App() {
+
+    const  onRegCallback = (data) => {
+        const { skill, userId} = data;
+        window.location.href = "/home?userId="+ userId + "&skill=" + skill;
+
+    }
 
     const [load, upadateLoad] = useState(true);
     useEffect(() => {
@@ -18,12 +29,23 @@ function App() {
         return () => clearTimeout(timer);
     }, []);
 
+    const handleRegistration = (mentorsData) => {
+        // Handle the mentors' data received from the registration
+        console.log("Mentors Data:", mentorsData);
+
+        // You can navigate to the Home component or perform any other actions here
+    };
 
   return (
       <Router>
         <div className="App" id={load ? "no-scroll" : "scroll"}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<RegisterMentee onRegistration={onRegCallback}/>} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/engage" element={<Engage />} />
+              <Route path="/preview" element={<Preview />} />
+              <Route path="/engageMentor" element={<EngageResponse />} />
+              <Route path="/new" element={<New />} />
           </Routes>
         </div>
       </Router>

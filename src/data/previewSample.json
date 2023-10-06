@@ -1,0 +1,27 @@
+{
+  "preview": [
+    {
+      "name": "Pankaj",
+      "exp": "5.1",
+      "skills": {
+        "secondary": [
+          "Python"
+        ],
+        "primary": [
+          "Java Java"
+        ]
+      },
+      "location": "Mumbai",
+      "companyDetails": {
+        "designation": "Technical Architect",
+        "orgn": "Amazon"
+      },
+      "comapanyType": "Indian MNC",
+      "education": "KVB",
+      "ratingDetails": {
+        "rating": "4.6",
+        "count": "10"
+      }
+    }
+  ]
+}

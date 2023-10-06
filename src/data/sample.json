@@ -1,28 +1,26 @@
 {
     "users": [
         {
-            "name": "Shivam",
-            "experience": "5.5 yrs",
-            "ctc": {
-                "current": "3.5 Lac",
-                "expected": "5 Lac"
-            },
-            "company": "Naukri.com",
-            "location": {
-                "current": "Mumbai",
-                "preferred": ["Noida", "Gurgaon"]
-            },
-            "education": "K.V.S",
+            "name": "Pankaj",
+            "exp": "5.5",
             "skills": {
-                "primary": [
-                    "Java",
-                    "Spring",
+                "secondary": [
                     "Python"
                 ],
-                "secondary": [
-                    "Nodejs",
-                    "Helm"
+                "primary": [
+                    "Java Java"
                 ]
+            },
+            "location": "Mumbai",
+            "companyDetails": {
+                "designation": "Technical Architect",
+                "orgn": "Amazon"
+            },
+            "comapanyType": "Indian MNC",
+            "education": "KVB",
+            "ratingDetails": {
+                "rating": "4.6",
+                "count": "10"
             }
         }
     ]
